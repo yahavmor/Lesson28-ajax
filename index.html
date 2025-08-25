@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Ajax-proj</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Ajax Project</h1>
+            <nav class="nav">
+                <ul>
+                    <li onclick="showSection(this)">adress-book</li>
+                    <li onclick="showSection(this)">yes-no</li>
+                    <li onclick="showSection(this)">movies</li>
+                    <li onclick="showSection(this)">pokemones</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="address-book">
+            <div class="robots-container"></div>
+        </section>
+        <section class="yes-no" ></section>
+        <section class="movies" ></section>
+        <section class="pokemones"></section>
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/service/ajax.js"></script>
+        <script src="js/service/robots-service.js"></script>
+        <script src="js/controller/robots-controller.js"></script>
+        <script src="js/controller/general.js"></script>
+    </body>
+</html>
