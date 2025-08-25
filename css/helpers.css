@@ -1,3 +1,8 @@
 .hidden{
     display: none;
 }
+.active-tab {
+    color: blue;
+    font-weight: bold;
+    border-bottom: 2px solid blue;
+}

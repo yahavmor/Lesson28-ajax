@@ -34,9 +34,7 @@ nav ul {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-nav ul li:hover {
-    text-decoration: underline;
-}
+
 .logo {
     font-size: 2em;
     font-weight: bold;

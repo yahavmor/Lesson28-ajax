@@ -8,8 +8,6 @@ function getUsers(count, onSuccess) {
     const url = `https://mrjson.com/api?rows=${count}&fname={firstName}&lname={lastName}&tel={phone|format}&address={streetAddress}&city={city}&state={usState|abbr}&zip={zip}`
 
     get(url, rawData => {
-        console.log('RAW DATA:', rawData)
-
         if (!rawData || rawData.length === 0) return onSuccess([])
 
         const users = rawData.map(user => ({

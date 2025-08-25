@@ -22,7 +22,19 @@
         <section class="address-book">
             <div class="robots-container"></div>
         </section>
-        <section class="yes-no" ></section>
+        <section class="yes-no" >
+            <div class="ask-container">
+                <h1 class="main-header">ask anything</h1>
+                <h2 class="sub-header">yes/no</h2>
+                <input type="text" placeholder="Your Question" class="ask-input">
+            </div>
+            <div class="answer-container">
+                <h2 class="answer-text"></h2>
+                <img class="answer-img" src="" alt="">
+                <div class="jokes-container hidden"></div>
+                <div class="dogs-container hidden"></div>
+        
+        </section>
         <section class="movies" ></section>
         <section class="pokemones"></section>
 
@@ -32,5 +44,7 @@
         <script src="js/service/robots-service.js"></script>
         <script src="js/controller/robots-controller.js"></script>
         <script src="js/controller/general.js"></script>
+        <script src="js/service/yes-no-service.js"></script>
+        <script src="js/controller/yes-no-controller.js"></script>
     </body>
 </html>
