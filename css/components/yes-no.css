@@ -7,9 +7,9 @@
 }
 
 .ask-container {
-    background-color: rgb(28, 173, 125);
+    background-color: #4CAF50;
     padding: clamp(2em, 5vw, 4em);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
     display: grid;
     gap: 2em;
     width: 100%;

@@ -1,0 +1,33 @@
+@media (max-width: 940px){
+    body{
+        background-color: black;
+            color: white;
+    }
+    header {
+        background-color: black;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger, select{
+        display: inline-block;
+        font-size: 1.5em;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+}
+ 
+
+    
+
+
+
+

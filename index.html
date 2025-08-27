@@ -10,6 +10,15 @@
     <body onload="onInit()">
         <header>
             <h1 class="logo">Ajax Project</h1>
+            <div class="hamburger hidden">
+                <label for="select">Choose your desire: </label>
+                <select>
+                    <option value="adress-book" onclick="showSection(this)">adress-book</option>
+                    <option value="yes-no" onclick="showSection(this)">yes-no</option>
+                    <option value="movies" onclick="showSection(this)">movies</option>
+                    <option value="pokemones" onclick="showSection(this)">pokemones</option>
+                </select>
+            </div>
             <nav class="nav">
                 <ul>
                     <li onclick="showSection(this)">adress-book</li>
@@ -46,7 +55,6 @@
             <div class="dialog-content"></div>
             <button class="close-dialog" onclick="closeDialog()">Close</button>
         </dialog>
-
 
         <script src="js/utils.js"></script>
         <script src="js/service/ajax.js"></script>
