@@ -12,7 +12,7 @@ function getJoke() {
 function getDog() {
     get('https://dog.ceo/api/breeds/image/random', dog => {
         const elDog = document.querySelector('.dogs-container')
-        elDog.innerHTML = `<img src="${dog.message}" alt="Cute dog" style="max-width: 100%;">`
+        elDog.innerHTML = `<img src="${dog.message}" alt="Cute dog">`
         elDog.style.display = 'block'
     })
 }

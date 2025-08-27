@@ -20,8 +20,6 @@ function showAnswer() {
     const elDog = document.querySelector('.dogs-container')
     get(url, res => {
         elText.innerText = res.answer
-        elAnswer.style.display = 'block'
-
         if (res.answer.toLowerCase() === 'yes') {
             getJoke()
         } else if (res.answer.toLowerCase() === 'no') {

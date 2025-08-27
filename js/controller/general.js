@@ -1,6 +1,10 @@
 'use strict';
 
-'use strict';
+function onInit() {
+    const elDefaultTab = document.querySelector('.nav li:first-child') 
+    showSection(elDefaultTab)
+}
+   
 
 function showSection(elSection) {
     const navItems = document.querySelectorAll('.nav li')
@@ -30,5 +34,6 @@ function showSection(elSection) {
             break
     }
 }
+
 
 
