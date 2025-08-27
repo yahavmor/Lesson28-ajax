@@ -1,0 +1,22 @@
+.pokemons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-items: center;
+    align-items: center;
+}
+.pokemon-card{
+    background-color: #ce1313;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+}

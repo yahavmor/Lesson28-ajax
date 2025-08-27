@@ -2,7 +2,7 @@
 showMovies()
 
 
-function showMovies(count) {
+function showMovies() {
     const url = 'https://api.themoviedb.org/3/genre/movie/list?api_key=eb6c17a5d4e99a8645ef8d325261f6a7'
     const elMoviesContainer = document.querySelector('.movies-container')
     get(url, res => {
