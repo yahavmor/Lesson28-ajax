@@ -4,37 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const elInput = document.querySelector('.ask-input')
     elInput.addEventListener('input', () => {
         const question = elInput.value
-
         if (question.length >= 3 && question.endsWith('?')) {
             showAnswer()
         }
     })
 })
 
-function showAnswer() {
-    const url = 'https://yesno.wtf/api'
-    eraseAnswer()
-    const elAnswer = document.querySelector('.answer-container')
-    const elText = document.querySelector('.answer-text')
-    const elJoke = document.querySelector('.jokes-container')
-    const elDog = document.querySelector('.dogs-container')
-    get(url, res => {
-        elText.innerText = res.answer
-        if (res.answer.toLowerCase() === 'yes') {
-            getJoke()
-        } else if (res.answer.toLowerCase() === 'no') {
-            getDog()
-        }
-    })
-}
+
 
 
 
 function eraseAnswer() {    
-    const elAnswer = document.querySelector('.answer-container')
-    const elText = document.querySelector('.answer-text')
-    const elJoke = document.querySelector('.jokes-container')
-    const elDog = document.querySelector('.dogs-container')
+    const elAnswer = getAnswer()
+    const elText = getText()
+    const elJoke = getJoke()
+    const elDog = getDog()
 
     elText.innerText = ''
     elJoke.innerHTML = ''
@@ -47,4 +31,33 @@ function focusInput() {
     const elInput = document.querySelector('.ask-input')
     elInput.value = ''
     elInput.focus()
+}
+function getAnswer() {
+    return document.querySelector('.answer-container')
+}
+function getText() {
+    return document.querySelector('.answer-text')
+}
+function getJoke() {
+    return document.querySelector('.jokes-container')
+}
+function getDog() {
+    return document.querySelector('.dogs-container')
+}   
+
+function checkAnswer(answer,elText) {
+    elText.innerText = answer
+    if (answer.toLowerCase() === 'yes') {
+            joke()
+    } else if (answer.toLowerCase() === 'no') {
+            dog()
+    }
+}
+function showJoke(joke, setup, punchline) {
+    joke.innerHTML = `<p>${setup}</p><p><strong>${punchline}</strong></p>`
+    joke.style.display = 'block'
+}
+function showDog(dog,dogImage) {
+    dog.innerHTML = `<img src="${dogImage}" alt="Cute dog">`
+    dog.style.display = 'block'
 }

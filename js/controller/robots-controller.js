@@ -6,7 +6,6 @@ function initRobots() {
 
 function renderRobots(users) {
     const elRobots = document.querySelector('.robots-container')
-    console.log('Users to render:', users)
     if (!users || users.length === 0) {
         elRobots.innerHTML = '<p>No users found.</p>'
         return
