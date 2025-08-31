@@ -1,7 +1,7 @@
 'use strict'
 
-const STORAGE_KEY = 'users'
-const gCache = loadFromStorage(STORAGE_KEY) || {}
+const STORAGE_KEY_ROBOTS = 'users'
+const gCacheRobots = loadFromStorage(STORAGE_KEY_ROBOTS) || {}
 
 function getUsers(count, onSuccess) {
     const cacheKey = `users_${count}`
@@ -19,8 +19,8 @@ function getUsers(count, onSuccess) {
             address:`${user.address}`,
         }))
 
-        gCache[cacheKey] = { ts: Date.now(), users }
-        saveToStorage(STORAGE_KEY, gCache)
+        gCacheRobots[cacheKey] = { ts: Date.now(), users }
+        saveToStorage(STORAGE_KEY_ROBOTS, gCacheRobots)
         onSuccess(users)
     })
 }
